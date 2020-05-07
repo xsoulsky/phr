@@ -2,6 +2,7 @@
 
 :?*:/phreload`n::
 {
+Send, 
 Reload
 }
 Return
@@ -10,15 +11,15 @@ Return
 {
 MsgBox, 4144, Prison Haste Reminder (by xsss\SoulSky), Вы действительно хотите отключить скрипт?`n`nВсе внутриигровые команды будут отключены до следующего запуска AHK-файла.
 IfMsgBox, Yes
-{
-MsgBox, 4160, ❤, Спасибо за использование Prison Haste Reminder!`n(by xsss\SoulSky), 2
-ExitApp
-}
+    {
+     MsgBox, 4160, ❤, Спасибо за использование Prison Haste Reminder!`n(by xsss\SoulSky), 2
+     ExitApp
+    }
 IfMsgBox, No
-{
-MsgBox, 4160, Prison Haste Reminder (by xsss\SoulSky), Работа скрипта продолжается!, 1
-Return
-}
+    {
+     MsgBox, 4160, Prison Haste Reminder (by xsss\SoulSky), Работа скрипта продолжается!, 1
+     Reload
+    }
 }
 Return
 
@@ -26,10 +27,10 @@ Return
 :?*:/ph`n::
 {
 IfWinNotExist, VimeWorld.ru
-{
-MsgBox, 4112, Prison Haste Reminder (by xsss\SoulSky), Ошибка! VimeWorld.ru не запущен!
-Return
-}
+    {
+     MsgBox, 4112, Prison Haste Reminder (by xsss\SoulSky), Ошибка! VimeWorld.ru не запущен!
+     Return
+    }
 Send, Скрипт успешно запущен{!}
 Sleep, 300
 sign := ""
@@ -134,38 +135,38 @@ main:
 Loop
 {
 If ((A_Hour = 0+Time or A_Hour = 6+Time or A_Hour = 12+Time or A_Hour = 18+Time) and (A_Min = 55))
-{
-GUI, +AlwaysOnTop
-GUI, Font, s10, Trebuchet MS
-GUI, Add, Text, , Скоро начнется запись на служение!
-GUI, Add, Button, default, Принять
-GUI, Color, FFF7F7
-GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
-WinActivate, VimeWorld.ru
-Return
-}
+    {
+     GUI, +AlwaysOnTop
+     GUI, Font, s10, Trebuchet MS
+     GUI, Add, Text, , Скоро начнется запись на служение!
+     GUI, Add, Button, default, Принять
+     GUI, Color, FFF7F7
+     GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
+     WinActivate, VimeWorld.ru
+     Return
+    }
 If ((A_Hour = 0+Time or A_Hour = 6+Time or A_Hour = 12+Time or A_Hour = 18+Time) and (A_Min = 53))
-{
-GUI, +AlwaysOnTop
-GUI, Font, s10, Trebuchet MS
-GUI, Add, Text, , Запись на служение начнется через 2 минуты!
-GUI, Add, Button, default, Принять
-GUI, Color, FFF7F7
-GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
-WinActivate, VimeWorld.ru
-Return
-}
+    {
+     GUI, +AlwaysOnTop
+     GUI, Font, s10, Trebuchet MS
+     GUI, Add, Text, , Запись на служение начнется через 2 минуты!
+     GUI, Add, Button, default, Принять
+     GUI, Color, FFF7F7
+     GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
+     WinActivate, VimeWorld.ru
+     Return
+    }
 If ((A_Hour = 0+Time or A_Hour = 6+Time or A_Hour = 12+Time or A_Hour = 18+Time) and (A_Min = 50))
-{
-GUI, +AlwaysOnTop
-GUI, Font, s10, Trebuchet MS
-GUI, Add, Text, , Запись на служение начнется через 5 минут!
-GUI, Add, Button, default, Принять
-GUI, Color, FFF7F7
-GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
-WinActivate, VimeWorld.ru
-Return
-}
+    {
+     GUI, +AlwaysOnTop
+     GUI, Font, s10, Trebuchet MS
+     GUI, Add, Text, , Запись на служение начнется через 5 минут!
+     GUI, Add, Button, default, Принять
+     GUI, Color, FFF7F7
+     GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
+     WinActivate, VimeWorld.ru
+     Return
+    }
 }
 ButtonПринять:
 {
@@ -178,38 +179,38 @@ mainminus:
 Loop
 {
 If ((A_Hour = 0-Time or A_Hour = 6-Time or A_Hour = 12-Time or A_Hour = 18-Time) and (A_Min = 55))
-{
-GUI, +AlwaysOnTop
-GUI, Font, s10, Trebuchet MS
-GUI, Add, Text, , Скоро начнется запись на служение!
-GUI, Add, Button, default, ОК
-GUI, Color, FFF7F7
-GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
-WinActivate, VimeWorld.ru
-Return
-}
+    {
+     GUI, +AlwaysOnTop
+     GUI, Font, s10, Trebuchet MS
+     GUI, Add, Text, , Скоро начнется запись на служение!
+     GUI, Add, Button, default, ОК
+     GUI, Color, FFF7F7
+     GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
+     WinActivate, VimeWorld.ru
+     Return
+    }
 If ((A_Hour = 0-Time or A_Hour = 6-Time or A_Hour = 12-Time or A_Hour = 18-Time) and (A_Min = 53))
-{
-GUI, +AlwaysOnTop
-GUI, Font, s10, Trebuchet MS
-GUI, Add, Text, , Запись на служение начнется через 2 минуты!
-GUI, Add, Button, default, ОК
-GUI, Color, FFF7F7
-GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
-WinActivate, VimeWorld.ru
-Return
-}
+    {
+     GUI, +AlwaysOnTop
+     GUI, Font, s10, Trebuchet MS
+     GUI, Add, Text, , Запись на служение начнется через 2 минуты!
+     GUI, Add, Button, default, ОК
+     GUI, Color, FFF7F7
+     GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
+     WinActivate, VimeWorld.ru
+     Return
+    }
 If ((A_Hour = 0-Time or A_Hour = 6-Time or A_Hour = 12-Time or A_Hour = 18-Time) and (A_Min = 50))
-{
-GUI, +AlwaysOnTop
-GUI, Font, s10, Trebuchet MS
-GUI, Add, Text, , Запись на служение начнется через 5 минут!
-GUI, Add, Button, default, ОК
-GUI, Color, FFF7F7
-GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
-WinActivate, VimeWorld.ru
-Return
-}
+    {
+     GUI, +AlwaysOnTop
+     GUI, Font, s10, Trebuchet MS
+     GUI, Add, Text, , Запись на служение начнется через 5 минут!
+     GUI, Add, Button, default, ОК
+     GUI, Color, FFF7F7
+     GUI, Show, x0 y0, Prison Haste Reminder (by xsss\SoulSky)
+     WinActivate, VimeWorld.ru
+     Return
+    }
 }
 ButtonОК:
 {
