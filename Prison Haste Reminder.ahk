@@ -2,7 +2,7 @@
 
 :?*:/phreload`n::
 {
-Send, 
+Send, {Enter}
 Reload
 }
 Return
